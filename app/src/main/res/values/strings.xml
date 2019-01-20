@@ -1,0 +1,23 @@
+<resources>
+    <string name="learncodeonline">LearnCodeOnline</string>
+    <string name="hello">hello</string>
+
+    <string name="be_consistent">Be Consistent</string>
+    <string name="email">Email</string>
+    <string name="log_in">log in</string>
+    <string name="logoLCO">logo</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="welcome">Welcome Back</string>
+
+    <string name="Null">Null</string>
+    <string name="be_consitent">Be consitent,</string>
+
+    <string name="learn_more">Learn More</string>
+    <string name="your_journey_to_magical_world_of_programing_starts_here">Your journey to magical world of programing starts here !</string>
+    <string name="learn_code_online">LearnCodeOnline</string>
+    <string name="name">Name</string>
+    <string name="tech_video_courses">Tech Video Courses</string>
+    <string name="login2">Login</string>
+    <string name="signup2">Signup</string>
+</resources>

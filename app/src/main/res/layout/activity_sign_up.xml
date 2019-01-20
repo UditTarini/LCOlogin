@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@mipmap/bcksignup">
+
+
+    <ImageView
+        android:id="@+id/signupView"
+        android:layout_width="344dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:contentDescription="@string/Null"
+        android:transitionName="signup"
+        app:srcCompat="@drawable/signup" />
+
+    <ImageView
+        android:id="@+id/logup"
+        android:layout_width="174dp"
+        android:layout_height="78dp"
+        android:layout_alignEnd="@+id/signupView"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/Null"
+        android:rotation="180"
+        android:transitionName="login"
+        app:srcCompat="@drawable/logdown"
+        />
+
+    <Button
+        android:id="@+id/arrow2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/fb"
+        android:layout_toEndOf="@+id/textView"
+        android:background="@drawable/next2"
+        android:rotation="90"
+        android:transitionName="arrow" />
+
+    <Button
+        android:id="@+id/arrow1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/arrow2"
+        android:layout_marginStart="31dp"
+        android:background="@drawable/next"
+        android:rotation="270"
+        android:transitionName="arrow2" />
+
+    <Button
+        android:id="@+id/fb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/logup"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="120dp"
+        android:background="@drawable/facebook2"
+        android:transitionName="fb" />
+
+    <Button
+        android:id="@+id/insta"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="127dp"
+        android:layout_marginTop="67dp"
+        android:background="@drawable/inta"
+        android:transitionName="insta" />
+
+    <Button
+        android:id="@+id/twt"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/signupView"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="118dp"
+        android:background="@drawable/twitter2"
+        android:transitionName="twt" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="81dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@+id/twt"
+        android:layout_marginEnd="-120dp"
+        android:layout_toStartOf="@+id/fb"
+        app:srcCompat="@drawable/lco"
+        android:transitionName="logo"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="252dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:fontFamily="@font/actor"
+        android:text="@string/your_journey_to_magical_world_of_programing_starts_here"
+        android:textSize="20sp"
+        android:layout_alignStart="@+id/lco"/>
+
+
+
+    <com.spark.submitbutton.SubmitButton
+        android:id="@+id/button2"
+        android:layout_width="128dp"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:text="@string/signup2"
+        android:textColor="@color/gray"
+        android:transitionName="btn"
+        app:sub_btn_background="@color/white"
+        app:sub_btn_duration="1000"
+        app:sub_btn_line_color="#3FD239"
+        app:sub_btn_ripple_color="#3FD239"
+        app:sub_btn_tick_color="@color/white" />
+
+    <TextView
+        android:id="@+id/lco"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="175dp"
+        android:fontFamily="@font/alegreya_bold"
+        android:text="@string/learn_code_online"
+        android:textColor="#516E90"
+        android:textSize="35sp"
+        android:transitionName="lcoName" />
+
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/lco"
+        android:layout_below="@id/editText7"
+        android:layout_marginBottom="176dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:fontFamily="@font/actor"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lco"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:fontFamily="@font/actor"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="275dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/lco"
+        android:layout_below="@+id/editText6"
+        android:ems="10"
+        android:hint="@string/email"
+        android:textSize="25sp"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/actor"/>
+
+
+</RelativeLayout>

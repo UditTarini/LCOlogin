@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginPage"
+    android:background="@mipmap/green"
+    >
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="20dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="-151dp"
+        app:srcCompat="@drawable/facebook1"
+        android:contentDescription="@string/Null" />
+
+    <ImageView
+        android:id="@+id/login"
+        android:layout_width="368dp"
+        android:layout_height="650dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        android:background="@mipmap/login"
+        android:transitionName="login"
+        android:contentDescription="@string/Null" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="112dp"
+        android:fontFamily="@font/alegreya_bold"
+        android:text="@string/welcome"
+        android:textSize="45sp"
+
+        android:layout_alignStart="@+id/textView2"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="73dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/editText"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="30dp"
+        android:contentDescription="@string/hello"
+        android:transitionName="logo"
+        app:srcCompat="@drawable/lco" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="172dp"
+        android:layout_toEndOf="@+id/facebook"
+        android:fontFamily="@font/actor"
+        android:text="@string/be_consitent"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toEndOf="@+id/insta"
+        android:fontFamily="@font/actor"
+        android:text="@string/learn_more"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:hint="@string/password"
+        android:textSize="25sp"
+        android:inputType="textPassword"
+        android:fontFamily="@font/actor"/>
+
+
+    <com.spark.submitbutton.SubmitButton
+        android:id="@+id/button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="168dp"
+        android:text="@string/login2"
+        android:textColor="@color/gray"
+        android:transitionName="btn"
+        app:sub_btn_background="@color/white"
+        app:sub_btn_duration="1000"
+        app:sub_btn_line_color="#3FD239"
+        app:sub_btn_ripple_color="#3FD239"
+        app:sub_btn_tick_color="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignEnd="@+id/editText"
+        android:text="@string/forgot_password"
+        android:textSize="15sp"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_marginBottom="-20dp"/>
+
+    <Button
+        android:id="@+id/insta"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/facebook"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/instagram1"
+        android:transitionName="insta"/>
+
+    <Button
+        android:id="@+id/fb"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/facebook"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/facebook1"
+        android:transitionName="fb"/>
+
+    <Button
+        android:id="@+id/twt"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/fb"
+        android:layout_marginEnd="130dp"
+        android:layout_marginTop="-80dp"
+        android:background="@drawable/twitter1"
+        android:transitionName="twt"/>
+
+    <ImageView
+        android:id="@+id/logdown"
+        android:layout_width="166dp"
+        android:layout_height="86dp"
+        android:layout_alignBottom="@+id/twt"
+        android:layout_alignStart="@+id/facebook"
+        android:contentDescription="@string/Null"
+        android:transitionName="signup"
+        app:srcCompat="@drawable/logdown" />
+
+    <Button
+        android:id="@+id/arrow"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/facebook"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/next"
+        android:rotation="270"
+        android:transitionName="arrow" />
+
+    <Button
+        android:id="@+id/arrow2"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/insta"
+        android:layout_alignEnd="@+id/editText"
+        android:background="@drawable/next2"
+        android:rotation="90"
+        android:transitionName="arrow2" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="233dp">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textSize="25sp"
+            android:fontFamily="@font/actor"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/alegreya_sans_bold"
+        android:text="@string/learn_code_online"
+        android:textColor="#516E90"
+        android:textSize="35sp"
+        android:transitionName="lcoName" />
+
+
+</RelativeLayout>
